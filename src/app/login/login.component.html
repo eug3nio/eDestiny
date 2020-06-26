@@ -23,7 +23,7 @@
               <label for="inputSenha">Senha</label>
             </span>
             <small>
-              <a class="esqueceuSenha" href="#">Esqueceu sua senha?</a>
+              <a class="esqueceuSenha" routerLink="/esqueceu-senha">Esqueceu sua senha?</a>
             </small>
           </div>
         </div>
@@ -31,28 +31,30 @@
         <p-footer>
           <div class="p-grid" style="margin-bottom: 1rem !important;">
             <div class="p-col-12" style="text-align: center;">
-              <button pButton type="button" class="ui-button-raised ui-button-success" label="Entrar"></button>
+              <button pButton type="button" class="ui-button-raised ui-button-success" label="Entrar"
+                routerLink="/home"></button>
             </div>
           </div>
           <div class="p-grid" style="margin-bottom: 1rem; align-items: center !important;">
             <div class="p-col-5 p-md-5 p-lg-5"
-              style="flex-grow: 1!important; margin-right: .5rem !important; border-bottom: 1px solid rgba(0,0,0,.1)!important;">
+              style="flex-grow: 1 !important; margin-right: .5rem !important; border-bottom: 1px solid rgba(0,0,0,.1)!important;">
             </div>
             <div style="padding-top: 10px;">ou</div>
             <div class="p-col-5 p-md-5 p-lg-5"
-              style="flex-grow: 1!important; margin-left: .5rem !important; border-bottom: 1px solid rgba(0,0,0,.1)!important;">
+              style="flex-grow: 1 !important; margin-left: .5rem !important; border-bottom: 1px solid rgba(0,0,0,.1)!important;">
             </div>
           </div>
           <div class="p-grid">
             <div class="p-col-12" style="text-align: center;">
               <button pButton type="button" class="ui-button-raised ui-button-secondary btnFacebook"
-                style="margin-right: 5px;" pTooltip="Entrar com o Facebook" tooltipPosition="bottom"></button>
+                style="margin-right: 5px;" pTooltip="Entrar com o Facebook" tooltipPosition="left"></button>
               <button pButton type="button" class="ui-button-raised ui-button-secondary btnGmail"
-                pTooltip="Entrar com o Google" tooltipPosition="bottom"></button>
+                pTooltip="Entrar com o Google" tooltipPosition="right"></button>
             </div>
             <div class="p-col-12" style="text-align: center;">
               <small>
-                Ainda não possui conta? <a href="#" style="text-decoration: underline; color: #333333;">Registre-se.</a>
+                Ainda não possui conta? <a routerLink="/registro"
+                  style="text-decoration: underline; color: #333333;">Registre-se.</a>
               </small>
             </div>
           </div>
