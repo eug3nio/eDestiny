@@ -1,43 +1,63 @@
 <form>
-  <div class="p-grid">
-    <div class="p-col-12">
-      <div style="margin:auto; width: 50%;">
+  <div class="login-body p-grid">
+    <div class="p-col-12 p-md-12 p-lg-12">
+      <p-card>
+        <div class="imgLogo">
+          <img src="assets/logo.png" alt="Logo e-Destiny">
+        </div>
 
-        <p-card styleClass="p-col-12 p-md-6 p-lg-6">
-          <p-header>
-            <div class="p-grid" style="background-color: #57B847;">
-              <div class="p-col-12" style="text-align: center; margin: 15px 0 15px 0; color: white; font-weight: bold; font-size: 16px;">
-                Iniciar Sessão
-              </div>
-            </div>
-          </p-header>
+        <h1>e-Destiny</h1>
+        <h2>O destino do seu e-Lixo</h2>
 
-          <div style="margin-top: 15px;" class="ui-fluid p-formgrid p-grid">
-            <div class="p-field p-col-12">
-              <span class="ui-float-label">
-                <input id="inputEmail" type="text" pInputText>
-                <label for="fiinputEmailrstname1">Email</label>
-              </span>
-            </div>
-
-            <div class="p-field p-col-12">
-              <span class="ui-float-label">
-                <input id="inputSenha" type="text" pInputText>
-                <label for="inputSenha">Senha</label>
-              </span>
-            </div>
+        <div class="ui-fluid p-formgrid p-grid">
+          <div class="p-field p-col-12">
+            <span class="ui-float-label">
+              <input id="inputEmail" type="text" pInputText required="true">
+              <label for="inputEmail">Email</label>
+            </span>
           </div>
 
-          <p-footer>
-            <div class="p-grid">
-              <div class="p-col-12" style="text-align: center;">
-                <button pButton type="button" class="ui-button-raised ui-button-rounded ui-button-success"
-                  label="Entrar"></button>
-              </div>
+          <div style="margin-top: 10px;" class="p-field p-col-12">
+            <span class="ui-float-label">
+              <input id="inputSenha" type="password" pInputText required="true">
+              <label for="inputSenha">Senha</label>
+            </span>
+            <small>
+              <a class="esqueceuSenha" href="#">Esqueceu sua senha?</a>
+            </small>
+          </div>
+        </div>
+
+        <p-footer>
+          <div class="p-grid" style="margin-bottom: 1rem !important;">
+            <div class="p-col-12" style="text-align: center;">
+              <button pButton type="button" class="ui-button-raised ui-button-success" label="Entrar"></button>
             </div>
-          </p-footer>
-        </p-card>
-      </div>
+          </div>
+          <div class="p-grid" style="margin-bottom: 1rem; align-items: center !important;">
+            <div class="p-col-5 p-md-5 p-lg-5"
+              style="flex-grow: 1!important; margin-right: .5rem !important; border-bottom: 1px solid rgba(0,0,0,.1)!important;">
+            </div>
+            <div style="padding-top: 10px;">ou</div>
+            <div class="p-col-5 p-md-5 p-lg-5"
+              style="flex-grow: 1!important; margin-left: .5rem !important; border-bottom: 1px solid rgba(0,0,0,.1)!important;">
+            </div>
+          </div>
+          <div class="p-grid">
+            <div class="p-col-12" style="text-align: center;">
+              <button pButton type="button" class="ui-button-raised ui-button-secondary btnFacebook"
+                style="margin-right: 5px;" pTooltip="Entrar com o Facebook" tooltipPosition="bottom"></button>
+              <button pButton type="button" class="ui-button-raised ui-button-secondary btnGmail"
+                pTooltip="Entrar com o Google" tooltipPosition="bottom"></button>
+            </div>
+            <div class="p-col-12" style="text-align: center;">
+              <small>
+                Ainda não possui conta? <a href="#" style="text-decoration: underline; color: #333333;">Registre-se.</a>
+              </small>
+            </div>
+          </div>
+        </p-footer>
+      </p-card>
     </div>
   </div>
 </form>

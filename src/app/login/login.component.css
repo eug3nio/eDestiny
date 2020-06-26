@@ -1,0 +1,95 @@
+body {
+  margin: 0px;
+}
+
+.login-body {
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 565px;
+  height: 410px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -282px;
+  margin-top: -232px;
+  padding: 0;
+}
+
+.imgLogo {
+  text-align: center;
+  vertical-align: middle;
+  width: 108px;
+  height: 108px;
+  position: relative;
+  top: -54px;
+  left: 50%;
+  margin-left: -54px;
+  background: #fff;
+  border: 5px solid #cfffc7;
+  border-radius: 50%;
+}
+
+.login-body .ui-card-content {
+  padding: 12px 98px;
+  position: relative;
+  top: -54px;
+}
+
+h1 {
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1.3px;
+  color: #333333;
+  margin-top: -50px;
+  margin-bottom: 6px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 16px;
+  font-weight: normal;
+  letter-spacing: 0.5px;
+  color: #616161;
+  margin-top: 0;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+.login-body .ui-card-content .ui-g-12, .login-body .ui-card-content .ui-g-6 {
+  padding: 1em;
+}
+
+@media screen and (max-width: 1024px) {
+  .login-body {
+    left: 0;
+    margin-left: 0;
+    width: 100%;
+  }
+  .login-body .ui-card-content {
+    padding: 12px 38px;
+  }
+}
+
+.esqueceuSenha {
+  color: #333333;
+}
+
+.esqueceuSenha:hover {
+  text-decoration: underline;
+}
+
+.btnFacebook {
+  background-image: url(./icon_facebook.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 3px;
+}
+
+.btnGmail {
+  background-image: url(./icon_gmail.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 3px;
+}
