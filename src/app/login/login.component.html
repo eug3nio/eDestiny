@@ -1,5 +1,5 @@
 <div class="container" style="max-width: 400px; margin: auto">
-  <form autocomplete="off">
+  <form #form="ngForm" autocomplete="off">
     <div class="p-grid ui-fluid">
       <div class="p-col-12" style="margin-top: 60px;">
         <p-card>
@@ -10,49 +10,32 @@
           <h2>O destino do seu e-Lixo</h2>
           <div class="p-col-12">
             <span class="ui-float-label">
-              <input id="inputEmail" type="text" pInputText required="true">
+              <input name="email" email required id="inputEmail" type="text" pInputText required="true"
+                #inputEmail="ngModel" [(ngModel)]="email">
               <label for="inputEmail">Email</label>
             </span>
           </div>
 
           <div class="p-col-12" style="margin-top: 10px;">
             <span class="ui-float-label">
-              <input id="inputSenha" type="password" pInputText required="true">
+              <input name="senha" maxlength="3" required id="inputSenha" type="password" pInputText required="true"
+                #inputSenha="ngModel" [(ngModel)]="senha">
               <label for="inputSenha">Senha</label>
             </span>
             <small>
-              <a class="esqueceuSenha" routerLink="/esqueceu-senha">Esqueceu sua senha?</a>
+              <a class="esqueceuSenha">Esqueceu sua senha?</a>
             </small>
           </div>
 
           <p-footer>
             <div class="p-col-12" style="text-align: center;">
-              <button pButton type="submit" class="ui-button-raised ui-button-success" label="Entrar"
-                routerLink="/home"></button>
-            </div>
-            <div class="p-grid" style="margin-bottom: 1rem; align-items: center !important;">
-              <div class="p-col-5 p-md-5 p-lg-5"
-                style="flex-grow: 1 !important; margin-right: .5rem !important; border-bottom: 1px solid rgba(0,0,0,.1)!important;">
-              </div>
-              <div style="padding-top: 10px;">ou</div>
-              <div class="p-col-5 p-md-5 p-lg-5"
-                style="flex-grow: 1 !important; margin-left: .5rem !important; border-bottom: 1px solid rgba(0,0,0,.1)!important;">
-              </div>
+              <button pButton type="submit" class="ui-button-raised ui-button-success" icon="pi pi-sign-in"
+                iconPos="right" label="Entrar" routerLink="/home" [disabled]="form.invalid"></button>
             </div>
             <div class="p-grid">
-              <div class="p-col-6" style="text-align: center;">
-                <button pButton type="button" class="ui-button-raised ui-button-secondary btnFacebook"
-                  style="margin-right: 5px;" pTooltip="Entrar com o Facebook" tooltipPosition="top"></button>
-              </div>
-              <div class="p-col-6" style="text-align: center;">
-                <button pButton type="button" class="ui-button-raised ui-button-secondary btnGmail"
-                  pTooltip="Entrar com o Google" tooltipPosition="top"></button>
-              </div>
-
               <div class="p-col-12" style="text-align: center;">
                 <small>
-                  Ainda não possui conta? <a routerLink="/registro"
-                    style="text-decoration: underline; color: #333333;">Registre-se.</a>
+                  Ainda não possui conta? <a style="text-decoration: underline; color: #333333;">Registre-se.</a>
                 </small>
               </div>
             </div>

@@ -2,6 +2,7 @@
   <div class="container">
     <div class="p-grid">
       <div class="p-col-12">
+        <img src="assets/logo.png" alt="Logo e-Destiny">
         <a href="javascript:;" class="navbar-toggle" (click)="exibirMenu()"><i class="pi pi-bars"></i></a>
       </div>
     </div>
@@ -9,9 +10,11 @@
 
   <ul class="navbar-menu" [hidden]="!exibindoMenu">
     <li class="navbar-usuario">Usuário logado</li>
-    <li class="navbar-menuitem"><a routerLink="/home">Home</a></li>
-    <li class="navbar-menuitem"><a routerLink="/novaColeta">Nova Coleta</a></li>
-    <li class="navbar-menuitem"><a href="javascript:;">Listar Coletas</a></li>
-    <li class="navbar-menuitem"><a routerLink="/login">Sair</a></li>
+    <li class="navbar-menuitem"><a routerLink="/home"><i class="pi pi-home" style="font-size: 1em"></i> Home</a></li>
+    <li class="navbar-menuitem"><a routerLink="/novaColeta"><i class="pi pi-plus-circle" style="font-size: 1em"></i> Nova Coleta</a></li>
+    <li class="navbar-menuitem"><a href="/listarColetas"><i class="pi pi-list" style="font-size: 1em"></i> Gerenciar Coletas</a></li>
+    <li class="navbar-menuitem"><a href="javascript:;"><i class="pi pi-id-card" style="font-size: 1em"></i> Meus Dados</a></li>
+    <li class="navbar-menuitem"><a routerLink="/login"><i class="pi pi-sign-out" style="font-size: 1em"></i> Sair</a></li>
   </ul>
+
 </nav>

@@ -1,1 +1,14 @@
-<p>nova-coleta works!</p>
+<div class="container">
+  <h1>Nova coleta</h1>
+
+  <form #form="ngForm" autocomplete="off">
+    <div class="p-grid ui-fluid">
+      <div class="p-col-12 p-md-6 p-lg-3">
+        <label>Previsão para coleta</label>
+        <p-calendar name="dataPrevista" required #prevista="ngModel" [(ngModel)]="dataPrevista" dateFormat="dd/mm/yy"
+          [locale]="br" showButtonBar="true">
+        </p-calendar>
+      </div>
+    </div>
+  </form>
+</div>

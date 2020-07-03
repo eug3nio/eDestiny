@@ -6,6 +6,7 @@
 
 .navbar-toggle {
   color: white;
+  margin-left: 10px;
 }
 
 .navbar-menu {
@@ -14,7 +15,7 @@
   padding: 0;
   top: 0;
   bottom: 0;
-  right: 0;
+  left: 0;
   z-index: 998;
   list-style: none;
   background-color: #3a3633;
