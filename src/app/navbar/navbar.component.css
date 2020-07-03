@@ -6,7 +6,11 @@
 
 .navbar-toggle {
   color: white;
-  margin-left: 10px;
+}
+
+.navbar-toggle-menu-open {
+  color: white;
+  margin-left: 95px;
 }
 
 .navbar-menu {
